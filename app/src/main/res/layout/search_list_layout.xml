@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/mainColor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/id_meetingmiddle"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:background="@color/mainColor"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/search_back_button"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/titlebar_bt_style"
+            android:contentDescription="@null"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/searchTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="搜索结果"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/epg_search_resultcount"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:gravity="fill_vertical"
+            android:textColor="@color/color_main_top"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/epg_search_key"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="fill_vertical"
+            android:textColor="@color/color_main_top"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/epg_search_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

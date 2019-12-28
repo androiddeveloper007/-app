@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mobile91Q</string>
+    <string name="choose_playurl_play">手机播放</string>
+    <string name="video_device_select">请先连接设备</string>
+    <string name="choose_playurl_send">投屏播放</string>
+    <string name="choose_playurl_send_down">推送缓存</string>
+    <string name="play_load_percent">加载进度:</string>
+    <string name="chat_msg_content_null">内容不能为空！</string>
+    <string name="rtsp_get_error">子频道数据有误，请重新创建子频道！</string>
+    <string name="waitting_for_get_data">正在获取数据，请稍后再试！</string>
+    <string name="play_complation">播放结束</string>
+    <string name="play_url_change">播放地址失效,正在为你切源！</string>
+    <string name="player_change_next_one">正在为你切换到下一集</string>
+    <string name="play_err">播放地址失效,退出播放器！</string>
+
+
+    <string name="searchs_frament_movie">电影</string>
+    <string name="searchs_frament_tvSeries">电视剧</string>
+    <string name="searchs_frament_varietyShow">综艺</string>
+    <string name="searchs_frament_cartoon">动漫</string>
+    <string name="searchs_frament_documentary">体育</string>
+
+    <string name="video_detail_areaName">地区 :&#160;</string>
+    <string name="video_detail_year">年代 :&#160;</string>
+    <string name="video_detail_typeName">类型 :&#160;</string>
+    <string name="video_detail_dirertorName">导演 :&#160;</string>
+    <string name="video_detail_actorName">主演 :&#160;</string>
+    <string name="video_detail_actorVoice">声优 :&#160;</string>
+    <string name="video_detail_actorComment">解说 :&#160;</string>
+    <string name="video_detail_actorLecturer">讲师 :&#160;</string>
+    <string name="video_detail_default">暂无 &#160;</string>
+    <string name="video_detail_userName">用户 :&#160;</string>
+    <string name="video_detail_uploadTime">时间:&#160;</string>
+    <string name="video_detail_duration">时长:&#160;</string>
+    <string name="video_detail_duration_suffix">分钟&#160;</string>
+    <string name="no_desc">暂无详细内容</string>
+
+    <string name="search_key_tip">请输入搜索词</string>
+    <string name="search_input_tip"> 请输入您需要搜索的内容 </string>
+    <string name="search_history"> 搜索历史 </string>
+    <string name="search_hot"> 热门搜索 </string>
+    <string name="clear_search_history"> 清空搜索历史 </string>
+    <string name="search_result_before">共</string>
+    <string name="search_result_after">个</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 亮度进度条颜色设置 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="18dip" />
+
+            <gradient
+                android:angle="270"
+                android:centerColor="#AAAAAA"
+                android:centerY="0.45"
+                android:endColor="#8B8B83"
+                android:startColor="#B0B0B0" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="18dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="@color/sciflykublue"
+                    android:centerY="0.45"
+                    android:endColor="@color/sciflykublue"
+                    android:startColor="@color/sciflykublue" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

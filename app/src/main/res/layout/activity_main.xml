@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/mainColor" />
+
+    <com.zp.mobile91q.widget_and_tool.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topBar"
+        android:background="@color/mainColor"
+        app:pstsDividerColor="@color/white"
+        app:pstsIndicatorColor="@color/color_19"
+        app:pstsIndicatorHeight="4dp"
+        app:pstsUnderlineHeight="3dp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/epg_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs" />
+
+    <LinearLayout
+        android:id="@+id/searchBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/search_btn_bg"
+        android:gravity="center"
+        android:onClick="searchClk">
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/edit_search1"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/searchBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/search_btn_bg"
+        android:gravity="center"
+        android:onClick="filterClk">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/filter"
+            android:clickable="false" />
+    </LinearLayout>
+
+
+</RelativeLayout>
