@@ -1,1 +1,1 @@
-include ':app', ':ptr-lib', 'xpopup-lib'
+include ':app', ':ptr-lib', ':dlna_lib', 'xpopup-lib'

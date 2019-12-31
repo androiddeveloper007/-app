@@ -102,7 +102,7 @@ public class SearchService {
             parameter.append("&feature=EOS0MUJIHERNTV00");
 //            Log.e(TAG, "searchPage:parameter=" + parameter.toString());
             SearchResultInfo mSearchResultInfo = searchAction.searchFromCache(parameter.toString());
-            Log.d(TAG, "mSearchResultInfo = " + mSearchResultInfo);
+//            Log.d(TAG, "mSearchResultInfo = " + mSearchResultInfo.toString());
             if (mSearchResultInfo != null) {
                 List<SearchResultItem> items = mSearchResultInfo.getItmeList();
 //                Log.e(TAG, "searchPage:result size=" + items.size());

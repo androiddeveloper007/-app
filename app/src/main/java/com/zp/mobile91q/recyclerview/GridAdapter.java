@@ -77,10 +77,10 @@ public class GridAdapter extends BaseQuickAdapter<SearchResultItem> {
     }
 
     public void onFragmentStop() {
-        for(Map.Entry<Integer, ImageView> entry : map.entrySet()){
-            ImageView mapValue = entry.getValue();
-            Glide.clear(mapValue);
-        }
+//        for(Map.Entry<Integer, ImageView> entry : map.entrySet()){
+//            ImageView mapValue = entry.getValue();
+//            Glide.clear(mapValue);
+//        }
     }
 
     public void setCode(String str){

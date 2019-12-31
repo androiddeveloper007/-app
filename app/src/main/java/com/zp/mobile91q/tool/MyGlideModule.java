@@ -7,6 +7,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool;
+import com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
 import com.bumptech.glide.load.engine.cache.LruResourceCache;
 import com.bumptech.glide.module.GlideModule;
@@ -17,8 +18,10 @@ public class MyGlideModule implements GlideModule {
 
     @Override
     public void applyOptions(Context context, GlideBuilder builder) {
+//        builder.setDiskCache(
+//                new InternalCacheDiskCacheFactory(context, 250 * 1024 *024));//250 is the max
         builder.setDiskCache(
-                new InternalCacheDiskCacheFactory(context, 250 * 1024 * 1024));//250 is the max
+                new ExternalCacheDiskCacheFactory(context, "zzpglide",500 * 1024 * 1024));//250 is the max
         //Memory Cache
         builder.setMemoryCache(new LruResourceCache(200 * 1024 * 1024));
         //Bitmap Pool ;Glide的位图池用于允许重复使用各种不同大小的位图，这可以大大减少在解码图像时由于像素数组分配而导致的jank垃圾收集。

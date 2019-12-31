@@ -128,7 +128,6 @@ public abstract class ServiceJson {
      */
     public static JSONObject getJSONObjectFromCache(String url) {
         Utils.print(TAG, "Get JSON:" + url);
-        // Log.d(TAG, "cache file:" + url.hashCode());
         DisplayImageOptions options = new DisplayImageOptions.Builder()
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
@@ -137,7 +136,6 @@ public abstract class ServiceJson {
         Log.d(TAG, "DataCacheManager.getInstance().isInited() " + DataCacheManager.getInstance().isInited());
         Object o = DataCacheManager.getInstance().loadCacheSync(DataCacheManager.DATA_CACHE_TYPE_TXT, url, null,
                 options);
-        // Log.d(TAG, "Response:" + o);
         try {
             String json = String.valueOf(o);
             if (isEffectiveJson(json)) {

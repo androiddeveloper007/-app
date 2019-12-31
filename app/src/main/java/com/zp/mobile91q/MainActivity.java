@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager = findViewById(R.id.epg_viewPager);
 
-//        viewPager.setOffscreenPageLimit(5);
+        viewPager.setOffscreenPageLimit(5);
 
         adapter = new EpgMainPagerAdapter(getSupportFragmentManager());
         adapter.setTitles(getTitles());
